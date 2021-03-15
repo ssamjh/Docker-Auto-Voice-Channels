@@ -22,7 +22,7 @@ docker run -d \
   -e HEARTBEAT_TIMEOUT=60 \
   -e DISABLE_LOOP=false \
   -e RDY_MESSAGE=false \
-  -v <GUILD DATA DIR>:/AutoVoiceChannels/guilds:Z \
+  -v /path/to/folder:/AutoVoiceChannels/guilds:Z \
   morgyn/autovoicechannels
 ```
 ### docker-compose
@@ -41,7 +41,7 @@ services:
       - DISABLE_LOOP=false #Optional
       - RDY_MESSAGE=false #Optional
     volumes:
-      - <GUILD DATA DIR>:/AutoVoiceChannels/guilds:Z
+      - /path/to/folder:/AutoVoiceChannels/guilds:Z
     restart: unless-stopped
 ```
 
