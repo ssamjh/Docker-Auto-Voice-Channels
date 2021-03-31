@@ -45,4 +45,10 @@ cat >config.json <<CONFIG_JSON
 
 CONFIG_JSON
 
+if [ "$AWS" = false ];
+then
 python ./auto-voice-channels.py
+exit 0
+else
+python ./heartbeat.py & python ./auto-voice-channels.py
+fi
