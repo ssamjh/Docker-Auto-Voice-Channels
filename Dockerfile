@@ -3,6 +3,7 @@ FROM python:slim
 ENV DISABLE_LOOP=false
 ENV HEARTBEAT_TIMEOUT=60
 ENV RDY_MESSAGE=false
+ENV AWS=false
 
 RUN apt-get update &&\
     apt-get -y install curl unzip &&\
