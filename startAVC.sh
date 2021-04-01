@@ -52,5 +52,5 @@ elif [ "$AWS" = "true" ]
 then
 python ./heartbeat.py & python ./auto-voice-channels.py
 else
-echo "AWS must be "true" or "false"
+echo "AWS must be true or false"
 fi
