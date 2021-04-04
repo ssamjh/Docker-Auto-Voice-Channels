@@ -24,14 +24,14 @@ docker run -d \
   -e RDY_MESSAGE=false \
   -e AWS=false \
   -v /path/to/folder:/AutoVoiceChannels/guilds:Z \
-  morgyn/autovoicechannels
+  vinanrra/auto-voice-channels
 ```
 ### docker-compose
 ```
 version: '2'
 services:
   avc:
-    image: morgyn/autovoicechannels
+    image: vinanrra/auto-voice-channels
     container_name: AutoVoiceChannels
     environment:
       - ADMIN_ID=<ADMIN ID>
