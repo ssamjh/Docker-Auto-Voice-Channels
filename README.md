@@ -8,10 +8,7 @@ https://github.com/gregzaal/Auto-Voice-Channels
 
 This pulls the latest zip file of the bot from github.
 
-***Please make sure you first read the documentation of Auto-Voice-Channels.**
-
-## Important
-You will need to create a directory where your guild data will be persistant.
+***Please make sure you first [read the documentation](https://github.com/gregzaal/Auto-Voice-Channels#readme) of Auto-Voice-Channels.**
 
 ## Usage
 ### Docker
