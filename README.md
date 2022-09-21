@@ -1,8 +1,8 @@
 # Docker image for the Discord bot Auto Voice Channels.
 
-[![Docker Pulls](https://img.shields.io/badge/dynamic/json?color=red&label=pulls&query=pull_count&url=https%3A%2F%2Fhub.docker.com%2Fv2%2Frepositories%2Fvinanrra%2Fauto-voice-channels%2F?style=flat-square&color=E68523&logo=docker&logoColor=white)](https://hub.docker.com/r/vinanrra/auto-voice-channels)
-[![Docker Stars](https://img.shields.io/badge/dynamic/json?color=red&label=stars&query=star_count&url=https%3A%2F%2Fhub.docker.com%2Fv2%2Frepositories%2Fvinanrra%2Fauto-voice-channels%2F?style=flat-square&color=E68523&logo=docker&logoColor=white)](https://hub.docker.com/r/vinanrra/auto-voice-channels)
-[![Docker Last Updated](https://img.shields.io/badge/dynamic/json?color=red&label=Last%20Update&query=last_updated&url=https%3A%2F%2Fhub.docker.com%2Fv2%2Frepositories%2Fvinanrra%2Fauto-voice-channels%2F?style=flat-square&color=E68523&logo=docker&logoColor=white)](https://hub.docker.com/r/vinanrra/auto-voice-channels)
+[![Docker Pulls](https://img.shields.io/badge/dynamic/json?color=red&label=pulls&query=pull_count&url=https%3A%2F%2Fhub.docker.com%2Fv2%2Frepositories%2Fvinanrra%2Fauto-voice-channels%2F?style=flat-square&color=E68523&logo=docker&logoColor=white)](https://hub.docker.com/r/ssamjh/auto-voice-channels)
+[![Docker Stars](https://img.shields.io/badge/dynamic/json?color=red&label=stars&query=star_count&url=https%3A%2F%2Fhub.docker.com%2Fv2%2Frepositories%2Fssamjh%2Fauto-voice-channels%2F?style=flat-square&color=E68523&logo=docker&logoColor=white)](https://hub.docker.com/r/ssamjh/auto-voice-channels)
+[![Docker Last Updated](https://img.shields.io/badge/dynamic/json?color=red&label=Last%20Update&query=last_updated&url=https%3A%2F%2Fhub.docker.com%2Fv2%2Frepositories%2Fssamjh%2Fauto-voice-channels%2F?style=flat-square&color=E68523&logo=docker&logoColor=white)](https://hub.docker.com/r/ssamjh/auto-voice-channels)
 
 https://github.com/gregzaal/Auto-Voice-Channels
 
@@ -25,14 +25,14 @@ docker run -d \
   -e RDY_MESSAGE=false \
   -e AWS=false \
   -v /path/to/folder:/AutoVoiceChannels/guilds:Z \
-  vinanrra/auto-voice-channels
+  ssamjh/auto-voice-channels:latest
 ```
 ### docker-compose
 ```
 version: '2'
 services:
   avc:
-    image: vinanrra/auto-voice-channels
+    image: ssamjh/auto-voice-channels:latest
     container_name: AutoVoiceChannels
     environment:
       - ADMIN_ID=<ADMIN ID>
