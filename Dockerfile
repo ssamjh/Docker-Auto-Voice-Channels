@@ -22,7 +22,7 @@ RUN apt-get -y install build-essential &&\
     
 # Clear unused files
 RUN apt clean && \
-    apt autoremove -y \
+    apt autoremove -y && \
     rm -rf \
 	/tmp/* \
 	/var/lib/apt/lists/* \
